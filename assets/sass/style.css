@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"); /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(36, 100%, 99%);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+body p {
+  color: hsl(236, 13%, 42%);
+}
+body .container {
+  margin-top: 3rem;
+  min-height: 90vh;
+  max-width: 55.88rem;
+  width: 90%;
+}
+body .container .center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: start;
+}
+
+header {
+  width: 100%;
+  height: 6.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .display-menu {
+  display: none;
+}
+
+main {
+  width: 27.5rem;
+  flex-grow: 1;
+}
+main .image {
+  width: 36.5rem;
+  height: 15.6875rem;
+}
+main .image img {
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+aside {
+  width: 7.5rem;
+  flex-grow: 1;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+aside .menu-aside {
+  background-color: hsl(240, 100%, 5%);
+  padding: 0rem 1.4rem 0rem 1.4rem;
+}
+aside .menu-aside .title-aside {
+  width: 100%;
+  height: 2.4rem;
+  margin-top: 1.6rem;
+}
+aside .menu-aside .title-aside h1 {
+  font-size: 2rem;
+  color: hsl(35, 77%, 62%);
+}
+
+footer {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+  grid-template-rows: minmax(6.625rem, auto);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  width: 55%;
+  height: 2.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+.card-big {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 11rem;
+  max-width: 62rem;
+}
+.card-big .title-card-big {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.37rem;
+  flex-grow: 1;
+}
+.card-big .title-card-big h1 {
+  font-size: 3rem;
+  line-height: 2.9rem;
+}
+.card-big .description-card-big {
+  padding: 1.8rem 1rem 2rem 0.5rem;
+  flex-grow: 1;
+  width: 50%;
+  height: 100%;
+}
+.card-big .description-card-big p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+.card-big .description-card-big .btn-card-big {
+  margin-top: 1.9rem;
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  letter-spacing: 0.15rem;
+  font-size: 0.76rem;
+  box-shadow: 0px 0px 2px hsl(236, 13%, 42%);
+  text-shadow: 0px 0px 1px hsl(236, 13%, 42%);
+}
+.card-big .description-card-big .btn-card-big:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
+.card-new {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 100%;
+  height: 7.3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+.card-new .title-article {
+  margin-bottom: 0.6rem;
+}
+.card-new .title-article h2 {
+  font-size: 1.1rem;
+  color: hsl(36, 100%, 99%);
+}
+.card-new .title-article h2:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.card-new .description p {
+  color: hsl(233, 8%, 79%);
+  font-size: 0.78rem;
+}
+
+.card-smoll {
+  width: 17.5rem;
+  height: 6.625rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-smoll .card-smoll-img {
+  width: 5.2rem;
+  height: 6.625rem;
+}
+.card-smoll .card-smoll-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.card-smoll .card-smoll-description {
+  width: 11.5rem;
+  height: 6.625rem;
+  text-align: left;
+}
+.card-smoll .card-smoll-description .card-smoll-number {
+  margin-bottom: 0.5rem;
+}
+.card-smoll .card-smoll-description .card-smoll-number h2 {
+  font-size: 1.5rem;
+  color: hsl(233, 8%, 79%);
+}
+.card-smoll .card-smoll-description .card-smoll-title {
+  margin-bottom: 0.5rem;
+}
+.card-smoll .card-smoll-description .card-smoll-title h3 {
+  font-size: 0.99rem;
+  cursor: pointer;
+}
+.card-smoll .card-smoll-description .card-smoll-title h3:hover {
+  color: hsl(5, 85%, 63%);
+}
+.card-smoll .card-smoll-description .card-smoll-text p {
+  line-height: 1.2rem;
+  font-size: 0.75rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: grid;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+.menu ul {
+  display: flex;
+  flex-direction: grid;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  margin-right: 0.65rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.menu ul li {
+  margin-left: 0.8rem;
+  margin-left: 2rem;
+  color: hsl(236, 13%, 42%);
+  cursor: pointer;
+}
+.menu ul li:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.logo {
+  width: 3.3rem;
+  height: 2.3rem;
+  margin-bottom: 0.95rem;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 62rem) {
+  body {
+    align-items: start;
+  }
+  body .container {
+    margin-top: 0px;
+    width: 90%;
+  }
+  body .container header .menu {
+    display: none;
+  }
+  body .container header .display-menu {
+    display: contents;
+    cursor: pointer;
+  }
+  body .container .center main {
+    width: 100%;
+  }
+  body .container .center main .image {
+    width: 100%;
+    height: 15.6875rem;
+  }
+  body .container .center main .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  body .container .center main .card-big {
+    height: 100%;
+  }
+  body .container .center aside {
+    width: 100%;
+    padding-left: 0px;
+  }
+  body .container .center aside .menu-aside {
+    width: 100%;
+  }
+}
+@media (max-width: 40.625rem) {
+  .card-big .title-card-big {
+    width: 100%;
+  }
+  .card-big .description-card-big {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

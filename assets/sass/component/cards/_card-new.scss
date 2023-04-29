@@ -1,0 +1,26 @@
+.card-new {
+    @include flex(column, center, left);
+    @include size (100%, 7.3rem);
+    padding-bottom: 1rem ;
+    border-bottom: 1px solid $color-dark-rayish-blue;
+    // border-bottom-width: ;
+    .title-article {
+        margin-bottom: 0.6rem;
+        h2 {
+
+            font-size: 1.1rem;
+            color: $color-off-white;
+        }
+        h2:hover{
+            color: $color-soft-orange;
+            cursor: pointer;
+        }
+    
+    }
+    .description {
+        p {
+            color: $color-grayish-blue;
+            font-size: 0.78rem;
+        }
+    }
+}

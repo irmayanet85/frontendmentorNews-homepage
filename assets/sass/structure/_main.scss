@@ -1,0 +1,25 @@
+
+    main {
+       
+        width: 27.5rem;
+        flex-grow: 1; 
+        
+        .image {
+            // @include size(38.3125rem, 15.6875rem);
+            @include size(36.5rem, 15.6875rem);
+
+            img {
+                @include size(100%, 100% );
+                @include img-fluid(cover);
+            }
+        }
+       
+    }
+   
+
+
+@media (max-width: 62.06rem){
+    
+
+
+}

@@ -1,0 +1,8 @@
+.logo {
+    @include size(3.3rem, 2.3rem);
+    margin-bottom: 0.95rem;
+    img {
+        @include img-fluid();
+        
+    }
+}

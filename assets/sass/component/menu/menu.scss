@@ -1,0 +1,22 @@
+.menu {
+    @include flex(grid, space-between, center);
+    margin-bottom: 0.9rem;
+    ul {
+        @include flex(grid, space-between, center);
+        text-decoration: none ; 
+        list-style: none;
+        margin-right: 0.65rem;
+        font-weight: 700;
+        font-size: 0.8rem;
+        li {
+            margin-left: 0.8rem;
+            margin-left: 2rem;
+            color: $color-dark-rayish-blue;
+            cursor: pointer;
+
+        }
+        li:hover{
+            color: $color-sof-red;
+        }
+    }
+}

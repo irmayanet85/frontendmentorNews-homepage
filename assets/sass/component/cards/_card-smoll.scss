@@ -1,0 +1,47 @@
+.card-smoll {
+    // flex-grow: 1;
+  
+    @include size($width-card-smoll, $height-card-smoll); 
+    @include flex(row, space-between, center);
+    .card-smoll-img {
+        @include size($width-img-card-smoll, $height-card-smoll);
+        img {
+            @include img-fluid();
+        }
+
+    }
+    .card-smoll-description {
+        
+        @include size($width-description-card-smoll, $height-card-smoll);
+        text-align: left;
+        .card-smoll-number {
+            margin-bottom: 0.5rem;
+            h2 {
+                font-size: 1.5rem;
+                color: $color-grayish-blue;
+            }
+
+        }
+        .card-smoll-title {
+            margin-bottom: 0.5rem;
+
+            h3{
+                font-size: 0.99rem;
+                cursor: pointer;
+                
+            }
+            h3:hover{
+                color: $color-sof-red;
+            }
+        }
+        .card-smoll-text{
+            p {
+                line-height: 1.2rem;
+                font-size: 0.75rem;
+            }
+
+        }
+
+    }
+    
+}

@@ -1,0 +1,41 @@
+.card-big{
+    // @include flex(row, space-between, center);
+    @include flex-grap(center, center);
+    @include size(100%, 11rem);
+    max-width: 62rem;
+    .title-card-big {
+        // background-color: green;
+        @include size(50%, 100%);
+        @include flex(column, center, center);
+        padding-top: 1.37rem;
+        flex-grow: 1;
+        h1 {
+    
+            font-size: 3rem;
+            line-height: 2.9rem;
+        }
+    }
+    .description-card-big{
+        padding: 1.8rem 1rem 2rem 0.5rem;
+        flex-grow: 1;
+        // background-color: red;
+        @include size(50%, 100%);
+        p {
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+        }
+
+        .btn-card-big {
+           margin-top: 1.9rem;
+           background-color: $color-sof-red;
+           color: $color-off-white; 
+           letter-spacing: 0.15rem;  
+           font-size: 0.76rem;
+           box-shadow: 0px 0px 2px $color-dark-rayish-blue;
+           text-shadow: 0px 0px 1px $color-dark-rayish-blue;  
+        }
+        .btn-card-big:hover {
+            background-color: $color-very-dark-blue;
+        }
+    }
+}

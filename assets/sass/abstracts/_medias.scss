@@ -1,0 +1,66 @@
+@media (max-width: $screen-smoll){
+    body {
+        align-items: start;
+        .container {
+            margin-top: 0px;
+            width: 90%;
+            header{
+                .menu {
+                    display: none;
+                }
+                .display-menu {
+                    display: contents;
+                    cursor: pointer;
+                }
+            }
+    
+            .center{
+                
+                main {
+                    width: 100%;
+                    .image {
+                        @include size(100%, 15.6875rem);
+                        img {
+                            @include img-fluid(cover);
+                        }
+                    }
+
+                    .card-big {
+                        
+                        height: 100%;
+                        
+                    }
+                   
+                    
+                }
+                
+                aside {
+                    width: 100%;
+                    padding-left: 0px;
+                    .menu-aside {
+                        width: 100%;
+                    }
+                }
+            }
+
+            footer{
+
+            }
+            }
+    }
+}
+
+@media (max-width: $screen-XSmoll){
+    .card-big {
+                        
+        .title-card-big {
+            width: 100%;
+        }
+        .description-card-big {
+            width: 100%;
+        }
+
+        
+    }
+
+}

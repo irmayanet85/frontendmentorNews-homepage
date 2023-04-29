@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+
+$theme-text: 'Inter', sans-serif;
+
+// ### Primary
+
+$color-soft-orange: hsl(35, 77%, 62%);
+$color-sof-red: hsl(5, 85%, 63%);
+
+
+// ### Neutral
+$color-off-white: hsl(36, 100%, 99%);
+$color-grayish-blue: hsl(233, 8%, 79%);
+$color-dark-rayish-blue: hsl(236, 13%, 42%);
+$color-very-dark-blue: hsl(240, 100%, 5%);
+
+// Breakpoints
+
+
+$screen-XSmoll: 40.625rem;   //448px Custom device
+$screen-smoll: 62rem;   
+
+
+//container
+$height-container: 90vh;
+$max-width-container: 55.88rem;
+
+//header
+$height-header: 5.6875rem;
+
+
+//card-smoll
+$width-card-smoll: 17.5rem;
+$height-card-smoll: 6.625rem;
+$width-img-card-smoll: 5.2rem;
+$width-description-card-smoll: 11.5rem;

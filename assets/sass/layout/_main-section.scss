@@ -1,0 +1,33 @@
+
+
+body {
+    background: $color-off-white;
+    font-family: $theme-text;
+    font-size: 16px;
+    @include flex(row, center, center);
+    min-height: 100vh;
+    p {
+        color: $color-dark-rayish-blue;
+    }
+    // max-width: 64rem;
+    
+    
+    
+    .container {
+        margin-top: 3rem;
+        min-height: 90vh;
+        // max-width: 59.88rem;
+        max-width: $max-width-container;
+        width: 90%;
+        
+        .center{
+            // @include flex(row, space-between, start);
+            @include flex-grap(flex-start, start);
+            // justify-content: flex-start;
+        }
+        
+    }
+}
+
+
+

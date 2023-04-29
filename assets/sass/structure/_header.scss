@@ -1,0 +1,12 @@
+header {
+    @include size(100%, 6.5rem);
+    
+    @include flex(row, space-between, center);
+
+    .display-menu {
+        display: none;
+    }
+    
+   
+    
+}

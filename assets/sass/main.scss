@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/reset";
+
+@import "layout/main-section";
+
+
+@import "structure/header";
+@import "structure/main";
+@import "structure/aside";
+@import "structure/footer";
+
+@import "component/bootons/botton";
+@import "component/cards/card-big";
+@import "component/cards/card-new";
+@import "component/cards/card-smoll";
+@import "component/menu/menu";
+@import "component/logo/logo.scss";
+
+@import "abstracts/medias";
+
+
+
+
+
