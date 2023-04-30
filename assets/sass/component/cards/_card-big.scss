@@ -1,36 +1,38 @@
 .card-big{
     // @include flex(row, space-between, center);
     @include flex-grap(center, center);
-    @include size(100%, 11rem);
-    max-width: 62rem;
+    @include size(100%, 13.3rem);
     .title-card-big {
+        margin-top: 0.9rem;
         // background-color: green;
         @include size(50%, 100%);
         @include flex(column, center, center);
-        padding-top: 1.37rem;
         flex-grow: 1;
         h1 {
     
-            font-size: 3rem;
-            line-height: 2.9rem;
+            font-size: 3.5rem;
+            line-height: 3.5rem;
+            font-weight: 900;
         }
     }
     .description-card-big{
-        padding: 1.8rem 1rem 2rem 0.5rem;
+        padding: 1.5rem 1rem 2rem 0rem;
         flex-grow: 1;
         // background-color: red;
         @include size(50%, 100%);
         p {
-            font-size: 0.8rem;
-            line-height: 1.2rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 400;
+            // letter-spacing: -0.018rem;
         }
 
         .btn-card-big {
-           margin-top: 1.9rem;
+           margin-top: 2.4rem;
            background-color: $color-sof-red;
            color: $color-off-white; 
-           letter-spacing: 0.15rem;  
-           font-size: 0.76rem;
+           letter-spacing: 0.4rem;  
+           font-size: 0.8rem;
            box-shadow: 0px 0px 2px $color-dark-rayish-blue;
            text-shadow: 0px 0px 1px $color-dark-rayish-blue;  
         }

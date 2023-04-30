@@ -1,12 +1,14 @@
 .card-smoll {
     // flex-grow: 1;
-  
+    
+
     @include size($width-card-smoll, $height-card-smoll); 
     @include flex(row, space-between, center);
     .card-smoll-img {
+        background-color: red;
         @include size($width-img-card-smoll, $height-card-smoll);
         img {
-            @include img-fluid();
+            @include img-fluid(cover);
         }
 
     }
@@ -15,19 +17,23 @@
         @include size($width-description-card-smoll, $height-card-smoll);
         text-align: left;
         .card-smoll-number {
-            margin-bottom: 0.5rem;
+            
+             
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.7rem;
                 color: $color-grayish-blue;
+                font-weight: 800;
             }
 
         }
         .card-smoll-title {
-            margin-bottom: 0.5rem;
+            
+            margin-top: 0.78rem;;
 
             h3{
-                font-size: 0.99rem;
+                font-size: 1.15rem;
                 cursor: pointer;
+                font-weight: 700;
                 
             }
             h3:hover{
@@ -35,9 +41,11 @@
             }
         }
         .card-smoll-text{
+            margin-top: 0.64rem;
             p {
-                line-height: 1.2rem;
-                font-size: 0.75rem;
+                line-height: 1.45rem;
+                font-size: 0.9rem;
+                font-weight: 700;
             }
 
         }

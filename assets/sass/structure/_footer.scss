@@ -1,7 +1,8 @@
 footer {
-    margin-top: 3rem;
+    
+    margin-top: 4.5rem;
     // @mixin grid (1fr 1fr 1fr, 5rem 5rem 5rem , 2rem) ;
-    @include grid($width-card-smoll, $height-card-smoll, $gap: 1rem);
+    @include grid($width-card-smoll, $height-card-smoll, $gap: 1.3rem);
     // @include flex-grap(space-between, center);
     margin-bottom: 3rem;
 }

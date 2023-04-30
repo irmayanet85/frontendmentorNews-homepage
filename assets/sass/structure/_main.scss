@@ -1,12 +1,13 @@
 
     main {
-       
-        width: 27.5rem;
+        
+        width: 47rem;
+        
         flex-grow: 1; 
         
         .image {
             // @include size(38.3125rem, 15.6875rem);
-            @include size(36.5rem, 15.6875rem);
+            @include size(45.4rem, 18.75rem);
 
             img {
                 @include size(100%, 100% );

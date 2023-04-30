@@ -1,19 +1,18 @@
-aside {
+.aside {
     // padding-left: 1.2rem;
-    width: 7.5rem;
+    width: 21.8rem;
     flex-grow: 1; 
-    background-color: red;
     
     @include flex(column, center, start);
     .menu-aside {
         background-color: $color-very-dark-blue; 
         padding: 0rem 1.4rem 0rem 1.4rem; 
         .title-aside {
-            @include size(100%, 2.4rem);
+            @include size(100%, 3rem);
             // @include flex(row, left, center);
-            margin-top: 1.6rem;
+            margin-top: 1.7rem;
             h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
                 color: $color-soft-orange;
             }
         }

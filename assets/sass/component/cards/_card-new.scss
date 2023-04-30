@@ -1,14 +1,14 @@
 .card-new {
     @include flex(column, center, left);
-    @include size (100%, 7.3rem);
-    padding-bottom: 1rem ;
+    @include size (100%, 9rem);
+    padding-bottom: 0.25rem ;
     border-bottom: 1px solid $color-dark-rayish-blue;
     // border-bottom-width: ;
     .title-article {
         margin-bottom: 0.6rem;
         h2 {
 
-            font-size: 1.1rem;
+            font-size: 1.29rem;
             color: $color-off-white;
         }
         h2:hover{
@@ -20,7 +20,8 @@
     .description {
         p {
             color: $color-grayish-blue;
-            font-size: 0.78rem;
+            font-size: 0.94rem;
+            line-height: 1.5rem;
         }
     }
 }
