@@ -3,7 +3,6 @@
     @include size (100%, 9rem);
     padding-bottom: 0.25rem ;
     border-bottom: 1px solid $color-dark-rayish-blue;
-    // border-bottom-width: ;
     .title-article {
         margin-bottom: 0.6rem;
         h2 {
@@ -15,7 +14,6 @@
             color: $color-soft-orange;
             cursor: pointer;
         }
-    
     }
     .description {
         p {

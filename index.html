@@ -8,103 +8,98 @@
   <link rel="stylesheet" href="./assets/sass/style.css">
   
   <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
 </head>
 <body>
   <div class="container">
-
     <header>
-      <div class="logo">
-        <img src="./assets/images/logo.svg" alt="Logo">
-      </div>
-      <nav class="menu">
-        <ul>
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
-        </ul>
-      </nav>
-      <div class="display-menu">
-        <img src="./assets/images/icon-menu.svg" alt="">
-      </div>
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="Logo">
+        </div>
+        <nav class="menu">
+          <ul>
+            <li> <a href="http://">Home</a> </li>
+            <li> <a href="http://">New</a></li>
+            <li> <a href="http://">Popular</a> </li>
+            <li> <a href="http://">Trending</a>  </li>
+            <li> <a href="http://">Categories</a> </li>
+          </ul>
+        </nav>
+        <div class="display-menu" >
+            <img src="./assets/images/icon-menu.svg" alt="" id="menu-open">
+        </div>
     </header>
-    <!-- <div class="space"></div> -->
     <div class="center">
 
-      <main class="main">
-        <div class="image">
-          <img 
-          srcset="./assets/images/image-web-3-mobile.jpg 800w,
-          ./assets/images/image-web-3-desktop.jpg 1440w"
-          sizes="(max-width: 800px)1440px"
-          src="./assets/images/image-web-3-desktop.jpg" alt=" Image web">
-        </div>
-        <div class="card-big">
-
-          <div class="title-card-big"> 
-            <h1>The Bright Future of Web 3.0?</h1> 
+        <main class="main">
+          <div class="image">
+            <img 
+            srcset="./assets/images/image-web-3-mobile.jpg 800w,
+            ./assets/images/image-web-3-desktop.jpg 1440w"
+            sizes="(max-width: 800px)1440px"
+            src="./assets/images/image-web-3-desktop.jpg" alt=" Image web">
           </div>
-          <div class="description-card-big">
-            <article>
-              <p>
-        
-                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-                But is it really fulfilling its promise?
-              </p>
-            </article>
-            <button class=" btn btn-card-big">READ MORE</button>
+          <div class="card-big">
+
+            <div class="title-card-big"> 
+              <h1>The Bright Future of Web 3.0?</h1> 
+            </div>
+            <div class="description-card-big">
+              <article>
+                <p>
           
+                  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                  But is it really fulfilling its promise?
+                </p>
+              </article>
+              <button class=" btn btn-card-big">READ MORE</button>
             
+              
+            </div>
           </div>
-        </div>
-    
-      </main>
-      <aside class="aside">
-        <div class="menu-aside">
+      
+        </main>
+        <aside class="aside">
+          <div class="menu-aside">
 
-          <div class="title-aside">
-            <h1>New </h1>
+            <div class="title-aside">
+              <h1>New </h1>
+            </div>
+            <article class="card-new">
+              <div class="title-article">
+                <h2>Hydrogen VS Electric Cars</h2>
+              </div>
+              <div class="description">
+                <p>
+                  
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </div>
+            </article>
+            <article class="card-new">
+              <div class="title-article">
+                <h2>The Downsides of AI Artistry</h2>
+              </div>
+              <div class="description">
+                <p>
+    
+                  What are the possible adverse effects of on-demand AI image generation?
+                </p>
+              </div>
+            </article>
+            <article class="card-new">
+              <div class="title-article">
+                <h2>Is VC Funding Drying Up?</h2>
+              </div>
+              <div class="description">
+                <p>
+    
+                  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                </p>
+              </div>
+            </article>
           </div>
-          <article class="card-new">
-            <div class="title-article">
-              <h2>Hydrogen VS Electric Cars</h2>
-            </div>
-            <div class="description">
-              <p>
-                
-                Will hydrogen-fueled cars ever catch up to EVs?
-              </p>
-            </div>
-          </article>
-          <article class="card-new">
-            <div class="title-article">
-              <h2>The Downsides of AI Artistry</h2>
-            </div>
-            <div class="description">
-              <p>
-  
-                What are the possible adverse effects of on-demand AI image generation?
-              </p>
-            </div>
-          </article>
-          <article class="card-new">
-            <div class="title-article">
-              <h2>Is VC Funding Drying Up?</h2>
-            </div>
-            <div class="description">
-              <p>
-  
-                Private funding by VC firms is down 50% YOY. We take a look at what that means.
-              </p>
-            </div>
-          </article>
-        </div>
-        
-      </aside>
+          
+        </aside>
     </div>
     <footer>
       <article class="card-smoll">
@@ -157,6 +152,23 @@
         </div>
       </article>
     </footer>
+    <div class="menu-mobile hidden" id="menu-mobile">
+        <div class="btn-menu-close" >
+          
+            <img src="./assets/images/icon-menu-close.svg" alt="Menu close" id="menu-close">
+        
+        </div>
+        <nav class="menu">
+          <ul>
+            <li> <a href="http://">Home</a> </li>
+            <li> <a href="http://">New</a></li>
+            <li> <a href="http://">Popular</a> </li>
+            <li> <a href="http://">Trending</a>  </li>
+            <li> <a href="http://">Categories</a> </li>
+          </ul>
+        </nav>
+
+    </div>
   </div>
 
   
@@ -183,5 +195,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="./assets/javascript/main.js"></script>
 </body>
 </html>

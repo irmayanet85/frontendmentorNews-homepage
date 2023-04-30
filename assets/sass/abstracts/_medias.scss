@@ -13,9 +13,7 @@
                     cursor: pointer;
                 }
             }
-    
             .center{
-                
                 main {
                     width: 100%;
                     .image {
@@ -24,16 +22,10 @@
                             @include img-fluid(cover);
                         }
                     }
-
                     .card-big {
-                        
-                        height: 100%;
-                        
-                    }
-                   
-                    
+                        height: 100%;   
+                    }   
                 }
-                
                 aside {
                     width: 100%;
                     padding-left: 0px;
@@ -42,56 +34,50 @@
                     }
                 }
             }
-
-            footer{
-
-            }
-            }
+        }
     }
 }
 
 @media (max-width: $screen-XSmoll){
-    header {
-        height: 5.5rem;
-        .logo{
-            @include size(3rem, 1.7rem);
-            margin-bottom: 0.3rem;
+    body .container {
+        header {
+            height: 5.5rem;
+            .logo{
+                @include size(3rem, 1.7rem);
+                margin-bottom: 0.3rem;
+            }
+        }
+        .center main {
+            .image {
+                height: 18.65rem;
+            }
+            .card-big {
+                margin-top: 0.65rem;                   
+                .title-card-big {
+                   h1 {
+                    font-size: 2.5rem;
+                    line-height: 2.5rem;
+                   }
+                }
+                .description-card-big {
+                    width: 100%;
+                    padding-top:1.1rem ;
+                    p{
+                        font-size: 0.91rem;
+                        line-height: 1.6rem;
+                    }
+                    .btn-card-big {
+                        margin-top: 1.7rem;
+                        width: 56%;
+                    }
+                }
+        
+                
+            }
         }
     }
-    body .container .center main {
-
-
-        .image {
     
-            height: 18.65rem;
-        }
 
-        .card-big {
-            margin-top: 0.65rem;
-                            
-            .title-card-big {
-               h1 {
-                font-size: 2.5rem;
-                line-height: 2.5rem;
-               }
-            }
-            .description-card-big {
-                width: 100%;
-                padding-top:1.1rem ;
-                p{
-                    font-size: 0.91rem;
-                    line-height: 1.6rem;
-                }
-
-                .btn-card-big {
-                    margin-top: 1.7rem;
-                    width: 56%;
-                }
-            }
-    
-            
-        }
-    }
         
     
 

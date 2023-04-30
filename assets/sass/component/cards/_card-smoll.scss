@@ -1,7 +1,4 @@
 .card-smoll {
-    // flex-grow: 1;
-    
-
     @include size($width-card-smoll, $height-card-smoll); 
     @include flex(row, space-between, center);
     .card-smoll-img {
@@ -10,31 +7,23 @@
         img {
             @include img-fluid(cover);
         }
-
     }
     .card-smoll-description {
-        
         @include size($width-description-card-smoll, $height-card-smoll);
         text-align: left;
-        .card-smoll-number {
-            
-             
+        .card-smoll-number {  
             h2 {
                 font-size: 1.7rem;
                 color: $color-grayish-blue;
                 font-weight: 800;
             }
-
         }
-        .card-smoll-title {
-            
+        .card-smoll-title { 
             margin-top: 0.78rem;;
-
             h3{
                 font-size: 1.15rem;
                 cursor: pointer;
                 font-weight: 700;
-                
             }
             h3:hover{
                 color: $color-sof-red;

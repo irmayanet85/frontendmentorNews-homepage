@@ -1,5 +1,4 @@
 
-
 body {
     background: $color-off-white;
     font-family: $theme-text;
@@ -9,22 +8,13 @@ body {
     p {
         color: $color-dark-rayish-blue;
     }
-    // max-width: 64rem;
-    
-    
     
     .container {
         margin-top: 5rem;
         min-height: 90vh;
-        // max-width: 69rem;
-        // max-width: $max-width-container;
-        width: 69.3rem;
-        // width: 90%;
-        
+        width: 69.3rem;        
         .center{
-            // @include flex(row, space-between, start);
             @include flex-grap(flex-start, start);
-            // justify-content: flex-start;
         }
         
     }

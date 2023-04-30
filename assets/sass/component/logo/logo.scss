@@ -2,7 +2,6 @@
     @include size(4rem, 2.7rem);
     margin-bottom: 2.8rem;
     img {
-        @include img-fluid();
-        
+        @include img-fluid();        
     }
 }

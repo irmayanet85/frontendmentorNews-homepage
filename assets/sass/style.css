@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"); /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -220,29 +220,32 @@ footer {
 
 .menu {
   display: flex;
-  flex-direction: grid;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2.85rem;
 }
 .menu ul {
   display: flex;
-  flex-direction: grid;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
   list-style: none;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.935rem;
   margin-right: 0.3rem;
 }
 .menu ul li {
   margin-left: 2.6rem;
-  color: hsl(236, 13%, 42%);
-  opacity: 0.8;
-  cursor: pointer;
 }
-.menu ul li:hover {
+.menu ul li a {
+  cursor: pointer;
+  text-shadow: 0px 0px 30px hsl(233, 8%, 79%);
+  color: hsl(240, 100%, 5%);
+  text-decoration: none;
+}
+.menu ul li a:hover {
   color: hsl(5, 85%, 63%);
 }
 
@@ -255,6 +258,43 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.menu-mobile {
+  box-shadow: 0px 0px 2px hsl(233, 8%, 79%);
+  width: 68.5%;
+  background-color: hsl(36, 100%, 99%);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.menu-mobile .btn-menu-close {
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+.menu-mobile .menu {
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+.menu-mobile .menu ul {
+  margin-top: 4rem;
+  display: block;
+}
+.menu-mobile .menu ul li {
+  margin-left: 1.45rem;
+  text-align: left;
+  font-size: 1.15rem;
+  margin-top: 1.55rem;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 62rem) {
@@ -296,10 +336,10 @@ footer {
   }
 }
 @media (max-width: 40.625rem) {
-  header {
+  body .container header {
     height: 5.5rem;
   }
-  header .logo {
+  body .container header .logo {
     width: 3rem;
     height: 1.7rem;
     margin-bottom: 0.3rem;
