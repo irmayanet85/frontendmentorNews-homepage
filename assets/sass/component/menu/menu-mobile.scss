@@ -8,8 +8,9 @@
     .btn-menu-close {
         height: 5rem;
         @include flex(row, right, center);
-        padding-right: 1rem;
+        padding-right: 1.2rem;
         cursor: pointer;
+        
     }
     .menu{
         width: 100%;
@@ -30,4 +31,15 @@
 
 .hidden {
     display: none;
+}
+
+.behind {
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: brightness(70%);
+}
+
+.btn-menu :active{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+    z-index: 5;
+    transition: all .3s ease-in-out;
 }

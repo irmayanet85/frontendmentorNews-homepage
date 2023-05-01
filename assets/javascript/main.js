@@ -1,23 +1,28 @@
 /*jshint esversion: 6 */ 
-let open = null;
-let close = null;
+let btnOpen = null;
+let btncClose = null;
+let menuMobile = null;
+let container = null;
 
 const bindElements = () => {
-     open = document.querySelector('#menu-open');
-     close = document.querySelector('#menu-close');
+    btnOpen = document.querySelector('#menu-open');
+    btnClose = document.querySelector('#menu-close');
+    menuMobile = document.querySelector('#menu-mobile');
+    container = document.querySelector('.container');
+
 };
 
 
 function openMenu(){
-    open.addEventListener('click', event => {
-        const menuMobile = document.querySelector('#menu-mobile');
-        menuMobile.classList.remove('hidden');  
+    btnOpen.addEventListener('click', event => {
+        menuMobile.classList.remove('hidden'); 
+        container.classList.add('behind');
     });
 };
 function closeMenu(){
-    close.addEventListener('click', event => {
-        const menuMobile = document.querySelector('#menu-mobile');
+    btnClose.addEventListener('click', event => {
         menuMobile.classList.add('hidden');
+        container.classList.remove('behind');
     });
 };
 const main = () => {
